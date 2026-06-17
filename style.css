@@ -19,3 +19,7 @@ body{
     color:white;
     padding:20px;
 }
+
+.sidebar h2{
+    margin-bottom:30px;
+}
