@@ -11,3 +11,11 @@ body{
 .container{
     display:flex;
 }
+
+.sidebar{
+    width:250px;
+    min-height: 100vh;
+    background-color: #4F46E5;
+    color:white;
+    padding:20px;
+}
