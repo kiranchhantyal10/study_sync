@@ -23,3 +23,7 @@ body{
 .sidebar h2{
     margin-bottom:30px;
 }
+
+.sidebar ul{
+    list-style:none;
+}
