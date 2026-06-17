@@ -27,3 +27,8 @@ body{
 .sidebar ul{
     list-style:none;
 }
+
+.sidebar li{
+    margin-bottom:20px;
+    cursor: pointer;
+}
