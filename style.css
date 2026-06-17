@@ -32,3 +32,8 @@ body{
     margin-bottom:20px;
     cursor: pointer;
 }
+
+.main-content{
+    flex:1;
+    padding:30px;
+}
