@@ -1,5 +1,5 @@
 body{
-    background-color: lightblue;
+    background-color: white;
 }
 
 *{
@@ -86,4 +86,23 @@ body{
 .progress-section p{
     font-weight: bold;
     color: #4F46E5;
+}
+
+.deadline-card{
+    background: #E5E7EB;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+.deadline-item{
+    margin-top:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.deadline-item p{
+    color:#64748b;
+    margin-top:5px;
 }
