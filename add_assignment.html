@@ -13,14 +13,35 @@
             <h2>📚 StudySync</h2>
             <nav>
                 <ul>
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="assignment.html">Assignment</a></li>
-                    <li>Add Assignment</li>
+                    <li><a href="index.html">🏠Dashboard</a></li>
+                    <li><a href="assignment.html">📝Assignment</a></li>
+                    <li>➕Add Assignment</li>
                 </ul>
             </nav>
         </aside>
         <main class="main-content">
             <h1>Add New Assignment</h1>
+            <form class="assignment-form">
+                <label for ="title">Assignment Title:</label>
+                <input type="text" id="title">
+
+                <label for= "subject">Subject:</label>
+                <input type="text" id="subject">
+                
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date">
+
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+
+                <button type="submit">Save Assignment</button>
+            </form>
         </main>
     </div>
     
