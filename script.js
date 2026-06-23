@@ -23,3 +23,18 @@ if (form) {
         alert("Assignment added successfully!");
     });
 }
+
+const assignmentList = document.getElementById("assignment-list");
+if (assignmentList) {
+    const assignments = JSON.parse(localStorage.getItem("assignments")) || [];
+    assignments.forEach(assignment => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${assignment.title}</td>
+            <td>${assignment.subject}</td>
+            <td>${assignment.priority}</td>
+            <td>${assignment.status}</td>
+        `;
+        assignmentList.appendChild(row);
+    });
+}
