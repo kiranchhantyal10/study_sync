@@ -14,36 +14,36 @@
             <nav>
                 <ul>
                     <li><a href="index.html">🏠Dashboard</a></li>
-                    <li><a href="assignment.html">📝Assignment</a></li>
-                    <li>➕Add Assignment</li>
+                    <li><a href="assignments.html">📝Assignment</a></li>
+                    <li><a href="add_assignment.html">➕Add Assignment</a></li>
                 </ul>
             </nav>
         </aside>
         <main class="main-content">
             <h1>Add New Assignment</h1>
-            <form class="assignment-form">
+            <form class="assignment-form" id="assignment-form">
                 <label for ="title">Assignment Title:</label>
-                <input type="text" id="title">
+                <input type="text" id="title" required>
 
                 <label for= "subject">Subject:</label>
-                <input type="text" id="subject">
-                
+                <input type="text" id="subject" required>
+
                 <label for="due-date">Due Date:</label>
-                <input type="date" id="due-date">
+                <input type="date" id="due-date" required>
 
                 <label for="priority">Priority:</label>
-                <select id="priority">
+                <select id="priority" required>
                     <option value="high">High</option>
                     <option value="medium">Medium</option>
                     <option value="low">Low</option>
                 </select>
                 <label for="description">Description:</label>
-                <textarea id="description"></textarea>
+                <textarea id="description"  rows="5" required></textarea>
 
                 <button type="submit">Save Assignment</button>
             </form>
         </main>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
