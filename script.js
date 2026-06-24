@@ -13,10 +13,11 @@ if (form) {
             subject,
             dueDate,
             priority,
-            description
+            description,
+            status: "pending"
         };
 
-        let assignments = JSON.parse(localStorage.setItem("assignments")) || [];
+        let assignments = JSON.parse(localStorage.getItem("assignments")) || [];
         assignments.push(assignment);
         localStorage.setItem("assignments", JSON.stringify(assignments));
         form.reset();
