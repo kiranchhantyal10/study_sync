@@ -35,6 +35,10 @@ if (assignmentList) {
             <td>${assignment.subject}</td>
             <td>${assignment.priority}</td>
             <td>${assignment.status}</td>
+            <td>
+                <button class="complete-btn">Complete</button>
+                <button class="delete-btn">Delete</button>
+            </td>
         `;
         assignmentList.appendChild(row);
     });

@@ -136,6 +136,23 @@ body{
     border-bottom:1px solid #E5E7EB;
 }
 
+.complete-btn, .delete-btn{
+    padding:8px 12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:white;
+    margin-right: 8px;
+}
+.complete-btn{
+    background-color: #22C55E;
+}
+.delete-btn{
+    background-color: #EF4444;
+}
+.complete-btn:hover, .delete-btn:hover{
+    opacity: 0.9;
+}
 @media (max-width: 768px) {
     .container{
         flex-direction: column;
