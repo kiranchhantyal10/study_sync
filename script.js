@@ -28,7 +28,7 @@ if (form) {
 const assignmentList = document.getElementById("assignment-list");
 if (assignmentList) {
     const assignments = JSON.parse(localStorage.getItem("assignments")) || [];
-    assignments.forEach(assignment => {
+    assignments.forEach((assignment, index) => {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${assignment.title}</td>
@@ -37,9 +37,20 @@ if (assignmentList) {
             <td>${assignment.status}</td>
             <td>
                 <button class="complete-btn">Complete</button>
-                <button class="delete-btn">Delete</button>
+                <button class="delete-btn" data-index="${index}">Delete</button>
             </td>
         `;
         assignmentList.appendChild(row);
+    });
+
+    const deleteButtons = document.querySelectorAll(".delete-btn");
+    deleteButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const index = this.dataset.index;
+            let assignments = JSON.parse(localStorage.getItem("assignments")) || [];
+            assignments.splice(index, 1);
+            localStorage.setItem("assignments", JSON.stringify(assignments));
+            location.reload();
+        });
     });
 }
