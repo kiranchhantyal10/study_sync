@@ -152,6 +152,48 @@ body{
 }
 .complete-btn:hover, .delete-btn:hover{
     opacity: 0.9;
+
+.completed,pending{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color:white;
+    font-weight:bold;
+    font-size:0.9rem;
+}
+.completed{
+    background-color: #22C55E;
+
+}
+.pending{
+    background-color: #F59E0B;
+
+.calendar{
+    margin-top:30px;
+}
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:10px;
+}
+
+.day-name{
+    background-color: #4F46E5;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+.day{
+    background: white;
+    min-height: 100px;
+    padding:10px;
+    border-radius:8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    
 }
 @media (max-width: 768px) {
     .container{
