@@ -34,7 +34,8 @@ if (assignmentList) {
             <td>${assignment.title}</td>
             <td>${assignment.subject}</td>
             <td>${assignment.priority}</td>
-            <td>${assignment.status}</td>
+            <td>
+            <span class="${assignment.status=== "Completed" ? "completed" : "pending"}">${assignment.status}</span>
             <td>
                 <button class="complete-btn">Complete</button>
                 <button class="delete-btn" data-index="${index}">Delete</button>
