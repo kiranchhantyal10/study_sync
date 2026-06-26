@@ -152,7 +152,7 @@ body{
 }
 .complete-btn:hover, .delete-btn:hover{
     opacity: 0.9;
-
+}
 .completed,pending{
     display: inline-block;
     padding: 6px 12px;
@@ -167,7 +167,7 @@ body{
 }
 .pending{
     background-color: #F59E0B;
-
+}
 .calendar{
     margin-top:30px;
 }
