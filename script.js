@@ -54,4 +54,16 @@ if (assignmentList) {
             location.reload();
         });
     });
+
+    const search = document.getElementById("search");
+    if (search) {
+        search.addEventListener("input", function () {
+            const keyword = this.value.toLowerCase();
+            const filtered =
+            assignments.filter(function (assignment) {
+                return assignment.title.toLowerCase().includes(keyword);
+            });
+            displayAssignments(filtered);
+        });
+    }
 }
